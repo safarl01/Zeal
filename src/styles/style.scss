@@ -1,0 +1,24 @@
+// @import '~font-awesome/css/font-awesome.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import "vendors/bootstrap";
+@import "molecules/sprite";
+@import "font/stylesheet.css";
+@import "mixin";
+@import "general";
+@import "variable";
+
+// UI-KIT
+@import "UI-KIT/button";
+
+//Pages
+@import "pages/services";
+@import "pages/team";
+
+
+//Sections
+@import "sections/header";
+@import "sections/evenlygrid";
+@import "sections/listing";
+@import "sections/listingtwo";
+@import "sections/hero";
+@import "sections/teamlisting";

@@ -1,0 +1,212 @@
+#services {
+
+    // ZEAL CREATE SIDE STRAT
+    .zeal-grid-create {
+        margin-top: 128px;
+        margin-bottom: 128px;
+
+        @include max-tablet {
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+    }
+
+    // ZEAL CREATE SIDE END
+
+
+    // ZEAL LISTING ONE START
+    .zeal-listing {
+        background-color: #e4458d;
+        color: #fff;
+
+        .container {
+            max-width: $container;
+
+            .row {
+                padding-left: 64px;
+                padding-right: 64px;
+
+                @include min-tablet {
+                    padding-left: 32px;
+                    padding-right: 32px;
+                }
+            }
+        }
+    }
+
+    // ZEAL LISTING ONE END
+
+
+    // ZEAL LISTING TWO START
+    .zeal-listing-two {
+        background-color: #45beeb;
+        color: #fff;
+
+        .container {
+            max-width: $container;
+
+            .row {
+                padding-left: 64px;
+                padding-right: 64px;
+
+                @include min-tablet {
+                    padding-left: 32px;
+                    padding-right: 32px;
+                }
+
+                @include resp-tab {
+                    flex-direction: column-reverse;
+                }
+
+                .side_padding {
+                    padding: 64px;
+
+                    @include max-tablet {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // ZEAL LISTING TWO END
+
+    // ZEAL LISTING THREE START
+    .zeal-listing-three {
+        background-color: #94c747;
+        color: #fff;
+
+        .container {
+            max-width: $container;
+
+            .row {
+                padding-left: 64px;
+                padding-right: 64px;
+
+                @include min-tablet {
+                    padding-left: 32px;
+                    padding-right: 32px;
+                }
+            }
+        }
+    }
+
+    // ZEAL LISTING THREE END
+
+
+    // ZEAL LISTING FOUR START
+    .zeal-listing-four {
+        background-color: #363636;
+        color: #fff;
+
+        .container {
+            max-width: $container;
+
+            .row {
+                padding-left: 64px;
+                padding-right: 64px;
+
+                @include min-tablet {
+                    padding-left: 32px;
+                    padding-right: 32px;
+                }
+
+                @include resp-tab {
+                    flex-direction: column-reverse;
+                }
+
+                .side_padding {
+                    padding: 64px;
+
+                    @include max-tablet {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    // ZEAL LISTING FOUR END
+
+    .last-share-block {
+        background-color: #2c2c2c;
+
+        .o-block {
+            height: 100%;
+            padding: 32px;
+
+            h2 {
+                margin-bottom: 32px;
+                font-size: 2.7465820312rem;
+                line-height: 1.25;
+                color: #fff;
+                font-family: 'Intro', Arial, Helvetica, sans-serif;
+
+                @include resp-tab {
+                    font-size: 1.7578125rem;
+                }
+            }
+
+            p {
+                margin-bottom: 1.5555555556em;
+                color: #fff;
+                font-size: 1.1875rem;
+                line-height: 1.75;
+            }
+
+            .c-btn {
+                color: white;
+                border: none;
+                border-width: 3px;
+                line-height: 48px;
+                height: 54px;
+                margin: 0;
+                padding: 5px 2.5em 0 2.5em;
+                white-space: nowrap;
+                font-weight: 700;
+                text-transform: uppercase;
+                // font-family: 'Intro';
+                transition: .3s ease;
+                background-color: #e4458d;
+
+                @include min-tablet {
+                    display: block;
+                    width: 100%;
+                    // padding: 0 !important;
+                    text-align: center;
+                }
+
+                i {
+                    position: absolute;
+                    right: 30px;
+                    opacity: 0;
+                    top: 20px;
+                    transition: .3s ease;
+
+                    @include min-tablet {
+                        right: 40px;
+                        top: 20px;
+                    }
+                }
+
+                &:hover {
+                    padding-right: 4em;
+
+                    i {
+                        opacity: 1;
+                        right: 20px;
+
+                        @include min-tablet {
+                            right: 25px;
+                        }
+                    }
+
+                    @include min-tablet {
+                        padding-right: 1.5em;
+
+                    }
+                }
+            }
+        }
+    }
+}

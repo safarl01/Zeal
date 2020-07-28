@@ -1,0 +1,17 @@
+@mixin max-tablet {
+    @media (max-width: 1200px){
+        @content;
+    }
+}
+
+@mixin resp-tab {
+    @media (max-width: 1000px){
+        @content;
+    }
+}
+
+@mixin min-tablet {
+    @media (max-width: 770px){
+        @content;
+    }
+}

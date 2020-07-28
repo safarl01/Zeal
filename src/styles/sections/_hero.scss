@@ -1,0 +1,71 @@
+.hero {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 66vh;
+
+
+    .content {
+        padding-top: 50px;
+        padding-bottom: 38px;
+        z-index: 999;
+
+        h1 {
+            color: #fff;
+            font-size: 4.2915344238rem;
+            line-height: 1.25;
+            text-align: center;
+            font-family: 'Intro', Arial, Helvetica, sans-serif;
+            cursor: default;
+
+            @include max-tablet {
+                font-size: 2.7465820312rem;
+            }
+
+            @include min-tablet {
+                font-size: 2.197265625rem;
+            }
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            padding-left: 64px;
+            padding-right: 64px;
+            font-size: 1.3125rem;
+            line-height: 1.75;
+            cursor: default;
+
+            @include max-tablet {
+                font-size: 1.125rem;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+
+            @include min-tablet {
+                font-size: 1.04rem;
+            }
+
+            &::before {
+                display: block;
+                content: "";
+                width: 28px;
+                height: 2px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 22px;
+                margin-bottom: 32px;
+                background-color: hsla(0, 0%, 100%, .5);
+            }
+        }
+    }
+
+    .overlay-hero {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.521);
+    }
+}
